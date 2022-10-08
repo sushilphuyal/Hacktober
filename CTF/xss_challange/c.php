@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bring it to Me</title>
+
+</head>
+<body>
+    
+	 <div style="background-color:#c9c9c9;padding:15px;">
+      <button type="button" name="homeButton" onclick="location.href='index.html';">Home Page</button>
+
+    </div>
+<div align="center">
+<form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>" name="form">
+   <p>Your name:<input type="text" name="username"></p>
+   <input type="submit" name="submit" value="Submit">
+</form>
+    </div>
+
+<?php 
+if (isset($_GET["username"])) {
+    $user = str_replace(">", "", $_GET["username"]);
+    echo "Your name is "."$user";
+}
+ ?>
+
+</body>
+</html>

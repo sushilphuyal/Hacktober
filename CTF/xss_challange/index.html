@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>world of XSS</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">world of XSS</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mickey hover:text-gray-900"><a href="index.html">Home</a></a>
+            <style>
+            .mickey {
+                margin-right: 250px;
+            }
+            </style>
+          </nav>
+        </div>
+      </header>
+    
+
+                <section class="text-gray-600 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                      <div class="flex flex-wrap -m-4">
+                        <div class="p-4 lg:w-1/3">
+                          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Iam beginner to XSS</h1>
+                            <a class="text-indigo-500 inline-flex items-center">     <a target="_blank" class="fcc-btn" href="a.php">Let's GO</a>  
+                            <style>
+                            .fcc-btn {
+                                background-color: #199319;
+                                color: white;
+                              }
+                              </style>
+                            
+                            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                              <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                 
+                              </span>
+                              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                 
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                            
+                            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">I have seen XSS</h1>
+                            <a class="text-indigo-500 inline-flex items-center"><a class="text-indigo-500 inline-flex items-center">     <a target="_blank" class="fcc-btn" href="b.php">Let's GO</a>
+                             
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                              <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                  
+                              </span>
+                              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                  
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                           
+                            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Bring it to me</h1>
+                            <a class="text-indigo-500 inline-flex items-center"><a class="text-indigo-500 inline-flex items-center">     <a target="_blank" class="fcc-btn" href="c.php">Let's GO</a>
+                              
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                              <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                 
+                              </span>
+                              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                               
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+</body>
+</html>
