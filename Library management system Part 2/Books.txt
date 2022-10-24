@@ -1,0 +1,3 @@
+Harry Potter, Jk Rowling,26,   $2
+Start ,       Simon Sinek,26,   $1.5
+Programming,  John Smith,11,   $1.5
